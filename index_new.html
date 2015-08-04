@@ -63,7 +63,18 @@ License: You must have a valid license purchased only from themeforest(the above
     <script type="text/javascript" src="app/controllers/login.controller.js"></script> 
     <script type="text/javascript" src="app/controllers/dashboard.controller.js"></script>   
     <script type="text/javascript" src="app/controllers/registration.controller.js"></script>  
-    <script type="text/javascript" src="app/project-board.js"></script>  
+    <script type="text/javascript" src="app/project-board.js"></script> 
+
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+
+      $('#team').collapse('hide');
+      $('#resource').collapse('hide');
+      $(".collapse").collapse();
+      alert("ciao")
+  });
+  </script> 
 	<!-- FINE ANGULAR MAIN AND CONTROLLER -->
 
 </head>
@@ -109,6 +120,8 @@ License: You must have a valid license purchased only from themeforest(the above
 		
 	</div>
 </div>
+
+
 
 
 <div class="row" class="collapse" id="team">	
