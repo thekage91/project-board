@@ -1440,7 +1440,442 @@ License: You must have a valid license purchased only from themeforest(the above
 								</div>
 								<!--END TABS-->
 							</div>
+
+							<div class="portlet-title tabbable-line">
+								<div class="caption caption-md">
+									<i class="icon-globe theme-font-color hide"></i>
+									<span class="caption-subject theme-font-color bold uppercase">CURRENT SPRINT BACKLOG</span>
+								</div>
+								<ul class="nav nav-tabs">
+									<li class="active">
+										<a href="#tab_1_1" data-toggle="tab">
+										Mandays </a>
+									</li>
+									<li class="hidden">
+										<a href="#tab_1_2" data-toggle="tab">
+										Activities </a>
+									</li>
+								</ul>
+							</div>
+							<div class="portlet-body">
+								<!--BEGIN TABS-->
+								<div class="tab-content">
+									<div class="tab-pane active" id="tab_1_1">
+										<div class="scroller" style="height: 337px;" data-always-visible="1" data-rail-visible1="0" data-handle-color="#D7DCE2">
+											<ul class="feeds">
+												<li ng-repeat="story in allIterations">
+													<div class="col1">
+														<div class="cont">
+															<div class="cont-col1">
+																<div class="label label-sm label-success">
+																	{{ story.nostro_id }}
+																</div>
+															</div>
+															<a class="cont-col2" ng-click="getStoryTasks(story.id)">
+																<div class="desc">
+																	 {{ story.name }}
+																</div>
+															</a>
+														</div>
+													</div>
+													<div class="col2">
+														<div class="date">
+															 {{ story.mandays }}
+														</div>
+													</div>
+												</li>
+												<!--<li>
+													<div class="col1">
+														<div class="cont">
+															<div class="cont-col1">
+																<div class="label label-sm label-warning">
+																	D01
+																</div>
+															</div>
+															<div class="cont-col2">
+																<div class="desc">
+																	 New member registered. Pending approval.
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col2">
+														<div class="date">
+															 1.5 
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="col1">
+														<div class="cont">
+															<div class="cont-col1">
+																<div class="label label-sm label-info">
+																	M02
+																</div>
+															</div>
+															<div class="cont-col2">
+																<div class="desc">
+																	 Web server hardware needs to be upgraded.
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col2">
+														<div class="date">
+															 2 
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="col1">
+														<div class="cont">
+															<div class="cont-col1">
+																<div class="label label-sm label-default">
+																	B01
+																</div>
+															</div>
+															<div class="cont-col2">
+																<div class="desc">
+																	 Prod01 database server is overloaded 90%.
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col2">
+														<div class="date">
+															 3 
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="col1">
+														<div class="cont">
+															<div class="cont-col1">
+																<div class="label label-sm label-warning">
+																	D02
+																</div>
+															</div>
+															<div class="cont-col2">
+																<div class="desc">
+																	 New group created. Pending manager review.
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col2">
+														<div class="date">
+															 5 
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="col1">
+														<div class="cont">
+															<div class="cont-col1">
+																<div class="label label-sm label-info">
+																	M01
+																</div>
+															</div>
+															<div class="cont-col2">
+																<div class="desc">
+																	 Web-A2 clound instance created. Schedule full scan.
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col2">
+														<div class="date">
+															 22 
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="col1">
+														<div class="cont">
+															<div class="cont-col1">
+																<div class="label label-sm label-default">
+																	B02
+																</div>
+															</div>
+															<div class="cont-col2">
+																<div class="desc">
+																	 Member canceled. Schedule account review.
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col2">
+														<div class="date">
+															 21 
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="col1">
+														<div class="cont">
+															<div class="cont-col1">
+																<div class="label label-sm label-info">
+																	M03
+																</div>
+															</div>
+															<div class="cont-col2">
+																<div class="desc">
+																	 New order received. Please take care of it.
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col2">
+														<div class="date">
+															 22 
+														</div>
+													</div>
+												</li>-->
+											</ul>
+										</div>
+									</div>
+									<div class="tab-pane hidden" id="tab_1_2">
+										<div class="scroller" style="height: 337px;" data-always-visible="1" data-rail-visible1="0" data-handle-color="#D7DCE2">
+											<ul class="feeds">
+												<li>
+													<a href="javascript:;">
+													<div class="col1">
+														<div class="cont">
+															<div class="cont-col1">
+																<div class="label label-sm label-success">
+																	<i class="fa fa-bell-o"></i>
+																</div>
+															</div>
+															<div class="cont-col2">
+																<div class="desc">
+																	 New user registered
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col2">
+														<div class="date">
+															 Just now
+														</div>
+													</div>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;">
+													<div class="col1">
+														<div class="cont">
+															<div class="cont-col1">
+																<div class="label label-sm label-success">
+																	<i class="fa fa-bell-o"></i>
+																</div>
+															</div>
+															<div class="cont-col2">
+																<div class="desc">
+																	 New order received
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col2">
+														<div class="date">
+															 10 mins
+														</div>
+													</div>
+													</a>
+												</li>
+												<li>
+													<div class="col1">
+														<div class="cont">
+															<div class="cont-col1">
+																<div class="label label-sm label-danger">
+																	<i class="fa fa-bolt"></i>
+																</div>
+															</div>
+															<div class="cont-col2">
+																<div class="desc">
+																	 Order #24DOP4 has been rejected. <span class="label label-sm label-danger ">
+																	Take action <i class="fa fa-share"></i>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col2">
+														<div class="date">
+															 24 mins
+														</div>
+													</div>
+												</li>
+												<li>
+													<a href="javascript:;">
+													<div class="col1">
+														<div class="cont">
+															<div class="cont-col1">
+																<div class="label label-sm label-success">
+																	<i class="fa fa-bell-o"></i>
+																</div>
+															</div>
+															<div class="cont-col2">
+																<div class="desc">
+																	 New user registered
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col2">
+														<div class="date">
+															 Just now
+														</div>
+													</div>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;">
+													<div class="col1">
+														<div class="cont">
+															<div class="cont-col1">
+																<div class="label label-sm label-success">
+																	<i class="fa fa-bell-o"></i>
+																</div>
+															</div>
+															<div class="cont-col2">
+																<div class="desc">
+																	 New user registered
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col2">
+														<div class="date">
+															 Just now
+														</div>
+													</div>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;">
+													<div class="col1">
+														<div class="cont">
+															<div class="cont-col1">
+																<div class="label label-sm label-success">
+																	<i class="fa fa-bell-o"></i>
+																</div>
+															</div>
+															<div class="cont-col2">
+																<div class="desc">
+																	 New user registered
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col2">
+														<div class="date">
+															 Just now
+														</div>
+													</div>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;">
+													<div class="col1">
+														<div class="cont">
+															<div class="cont-col1">
+																<div class="label label-sm label-success">
+																	<i class="fa fa-bell-o"></i>
+																</div>
+															</div>
+															<div class="cont-col2">
+																<div class="desc">
+																	 New user registered
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col2">
+														<div class="date">
+															 Just now
+														</div>
+													</div>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;">
+													<div class="col1">
+														<div class="cont">
+															<div class="cont-col1">
+																<div class="label label-sm label-success">
+																	<i class="fa fa-bell-o"></i>
+																</div>
+															</div>
+															<div class="cont-col2">
+																<div class="desc">
+																	 New user registered
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col2">
+														<div class="date">
+															 Just now
+														</div>
+													</div>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;">
+													<div class="col1">
+														<div class="cont">
+															<div class="cont-col1">
+																<div class="label label-sm label-success">
+																	<i class="fa fa-bell-o"></i>
+																</div>
+															</div>
+															<div class="cont-col2">
+																<div class="desc">
+																	 New user registered
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col2">
+														<div class="date">
+															 Just now
+														</div>
+													</div>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:;">
+													<div class="col1">
+														<div class="cont">
+															<div class="cont-col1">
+																<div class="label label-sm label-success">
+																	<i class="fa fa-bell-o"></i>
+																</div>
+															</div>
+															<div class="cont-col2">
+																<div class="desc">
+																	 New user registered
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col2">
+														<div class="date">
+															 Just now
+														</div>
+													</div>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!--END TABS-->
+							</div>
 						</div>
+
+
 						<!-- END PORTLET-->
 					</div>
 					<!-- FINE SPRINT BACKLOG --> 
@@ -1574,68 +2009,47 @@ License: You must have a valid license purchased only from themeforest(the above
 											 TASK ID
 										</th>
 										<th>
-											 TAG
-										</th>
-										<th>
-											 DONE
-										</th>
-										<th Hidden>
-											 RATE
+											 MANDAYS
 										</th>
 									</tr>
 									</thead>
 									<tr>
 										<td class="fit">
-											<img class="user-pic" src="../../assets/admin/layout3/img/ugo.jpg">
 										</td>
 										<td>
 											<a href="javascript:;" class="primary-link">Ugo</a>
 										</td>
 										<td>
-											<span class="bold theme-font-color">S01</span>
+											<span class="bold theme-font-color">B1</span>
 										</td>
 										<td>
-											 12
-										</td>
-										<td>
-											 24
+											7 
 										</td>
 									</tr>
 									<tr>
 										<td class="fit">
-											<img class="user-pic" src="../../assets/admin/layout3/img/davide.jpg">
 										</td>
 										<td>
 											<a href="javascript:;" class="primary-link">Davide</a>
 										</td>
 										<td>
-											 $1,345
+											<span class="bold theme-font-color">S14</span>
 										</td>
 										<td>
-											 450
-										</td>
-										<td>
-											 46
-										</td>
-										<td hidden>
-											<span class="bold theme-font-color">98%</span>
+											 1.5
 										</td>
 									</tr>
 									<tr>
 										<td class="fit">
-											<img class="user-pic" src="../../assets/admin/layout3/img/andrea.jpg">
 										</td>
 										<td>
 											<a href="javascript:;" class="primary-link">Andrea</a>
 										</td>
 										<td>
-											 $645
+											<span class="bold theme-font-color">D03</span>
 										</td>
 										<td>
-											 50
-										</td>
-										<td>
-											 89
+											 4
 										</td>
 									</tr>
 									</table>
@@ -1823,7 +2237,7 @@ License: You must have a valid license purchased only from themeforest(the above
 								</div>-->
 							</div>
 							<div class="portlet-body">
-								<div class="scroller" style="height: 305px;" data-always-visible="1" data-rail-visible1="0" data-handle-color="#D7DCE2">
+								<div class="scroller" style="height: 200px;" data-always-visible="1" data-rail-visible1="0" data-handle-color="#D7DCE2">
 									<div class="general-item-list">
 										<div class="item">
 											<div class="item-head">
@@ -1832,9 +2246,9 @@ License: You must have a valid license purchased only from themeforest(the above
 													<a href="" class="item-name primary-link">Ugo Buonadonna</a>
 													<span class="item-label">CEO</span>
 												</div>
-												<span class="item-status"><span class="badge badge-empty badge-success"></span> Open</span>
+												<span class="item-status HIDDEN"><span class="badge badge-empty badge-success"></span> Open</span>
 											</div>
-											<div class="item-body">
+											<div class="item-body hidden">
 												 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
 											</div>
 										</div>
@@ -1845,9 +2259,9 @@ License: You must have a valid license purchased only from themeforest(the above
 													<a href="" class="item-name primary-link">Davide Sicignani</a>
 													<span class="item-label">CTO</span>
 												</div>
-												<span class="item-status"><span class="badge badge-empty badge-warning"></span> Pending</span>
+												<span class="item-status hidden"><span class="badge badge-empty badge-warning"></span> Pending</span>
 											</div>
-											<div class="item-body">
+											<div class="item-body hidden">
 												 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat tincidunt ut laoreet.
 											</div>
 										</div>
@@ -1858,9 +2272,9 @@ License: You must have a valid license purchased only from themeforest(the above
 													<a href="" class="item-name primary-link">Andrea Trombone</a>
 													<span class="item-label">Design Director</span>
 												</div>
-												<span class="item-status"><span class="badge badge-empty badge-primary"></span> Closed</span>
+												<span class="item-status hidden"><span class="badge badge-empty badge-primary"></span> Closed</span>
 											</div>
-											<div class="item-body">
+											<div class="item-body hidden">
 												 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
 											</div>
 										</div>
