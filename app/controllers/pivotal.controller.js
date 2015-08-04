@@ -30,6 +30,15 @@ app.controller('PivotalTrackerCtrl', ['$scope', '$http', 'PivotalTracker', funct
   PivotalTracker.getCurrentIteration($scope.projectID).then(function (currentIteration) {
     $scope.currentIterationStories = currentIteration.stories;
     $scope.currentIteration = currentIteration;
+
+    /* 
+    * anche qui credo che ci sia un errore in quanto se si prova a stampare 
+    * le due liste, dovrebbe ridare le storie che si stanno facendo ora 
+    * invece ritorna delle storie random, tipo bitcoin events che non si sta
+    * facendo ora, secondo pivotal
+    */
+    console.log("currentIteration " + currentIteration[0] + "\n" + 
+                "currentIterationStories " + $scope.currentIterationStories[2].name );
   });
 
   PivotalTracker.getCurrentIterationUserAssignedStories($scope.projectID, $scope.ugoID).then(function (stories) {
@@ -37,7 +46,15 @@ app.controller('PivotalTrackerCtrl', ['$scope', '$http', 'PivotalTracker', funct
   });
   PivotalTracker.getCurrentIterationUserAssignedStories($scope.projectID, $scope.davideID).then(function (stories) {
     $scope.storiesDavide = stories;
+
+    /* 
+    * credo che ci sia un erroe perche' mi 
+    * stampa che devo fare la squeeze page, cosa che deve 
+    * fare andrea 
+    */
+    //console.log("davide " + stories[0].name);
   });
+
   PivotalTracker.getCurrentIterationUserAssignedStories($scope.projectID, $scope.andreaID).then(function (stories) {
     $scope.storiesAndrea = stories;
   });
