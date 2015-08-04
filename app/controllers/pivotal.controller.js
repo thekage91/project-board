@@ -74,6 +74,19 @@ app.controller('PivotalTrackerCtrl', ['$scope', '$http', 'PivotalTracker', funct
   $scope.getRemainingMandays = function (demoDay, teamMembers) {
     return PivotalTracker.getRemainingMandays(demoDay, teamMembers);
   };
+
+  $scope.getColorFromCategory = function (category) {
+      if(category.indexOf("business") > -1)
+        return 'background:blue';
+      else if(category.indexOf("software") > -1)
+        return 'background:yellow';
+      else if(category.indexOf("design") > -1)
+        return 'background:black';
+      else if(category.indexOf("marketing") > -1)
+        return 'background:red';
+      else
+        return '';
+  }
 }]);
 
 //# sourceMappingURL=pivotalTrackerController.js.map

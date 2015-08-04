@@ -13,7 +13,7 @@ app.factory('PivotalTracker', ['$http', '$q', function ($http, $q) {
                 for (var _iterator = story.labels[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
                     var label = _step.value;
 
-                    if (label.name.includes('m:')) story.mandays = parseFloat(label.name.substring(2));
+                    if (label.name.includes('m:')) story.mandays = parseInt(label.name.substring(2));
                     if (label.name.includes('c:')) story.category = label.name.substring(2);
                     if (label.name.includes('i:')) story.nostro_id = label.name.substring(2);
                 }
@@ -146,4 +146,4 @@ app.factory('PivotalTracker', ['$http', '$q', function ($http, $q) {
     };
 }]);
 
-//# sourceMappingURL=pivotal.service.js.map
+//# sourceMappingURL=pivotalTrackerService.js.map

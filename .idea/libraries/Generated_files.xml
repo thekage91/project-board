@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/app/services/pivotal.service.js" />
+        <item url="file://$PROJECT_DIR$/app/services/pivotalTrackerService.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/app/services/pivotal.service.js" />
+      <root url="file://$PROJECT_DIR$/app/services/pivotalTrackerService.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

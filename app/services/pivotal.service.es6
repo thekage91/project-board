@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('mean.pivotal-tracker').factory('PivotalTracker', ['$http','$q',
+app.factory('PivotalTracker', ['$http','$q',
   function($http,$q) {
 
       let addMandaysCategoryToStories = (stories) =>{
@@ -8,7 +8,7 @@ angular.module('mean.pivotal-tracker').factory('PivotalTracker', ['$http','$q',
 
             for( let label of story.labels) {
                 if (label.name.includes('m:'))
-                    story.mandays = parseInt(label.name.substring(2));
+                    story.mandays = parseFloat(label.name.substring(2));
                 if (label.name.includes('c:'))
                     story.category = label.name.substring(2);
                 if (label.name.includes('i:'))
@@ -17,6 +17,7 @@ angular.module('mean.pivotal-tracker').factory('PivotalTracker', ['$http','$q',
             return story;
         })
       }
+
 
       let getCurrentIteration = (projectID) => {
           let response = $q.defer();
@@ -32,6 +33,7 @@ angular.module('mean.pivotal-tracker').factory('PivotalTracker', ['$http','$q',
                   response.resolve(currentIteration)})
               .error( (message) => { response.reject(message)})
           return response.promise;
+
       }
 
 
