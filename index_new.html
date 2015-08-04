@@ -69,7 +69,7 @@ License: You must have a valid license purchased only from themeforest(the above
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
-<body class="page-md login" ng-app="project-board">
+<body class="page-md login" ng-app="project-board" ng-controller="DashboardCtrl">
 <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
 <div class="menu-toggler sidebar-toggler">
 </div>
@@ -92,18 +92,18 @@ License: You must have a valid license purchased only from themeforest(the above
 	<div class="row" style="margin-top:30px;">
 
 		<div class="btn-group text-center" style="margin-right: 20px;">
-				<a class="btn btn-primary btn-lg" href="dashboard.html">RESOURCE</a>
+				<a class="btn btn-primary btn-lg" role="button" data-toggle="collapse" href="#resource" aria-expanded="false" aria-controls="resource">RESOURCE</a>
 
 				<a class="btn btn-primary btn-lg" href="dashboard.html">SPRINT</a>
 
-				<a class="btn btn-primary btn-lg" ng-click="showTeam = !showTeam">TEAM</a>
+				<a class="btn btn-primary btn-lg" role="button" data-toggle="collapse" href="#team" aria-expanded="false" aria-controls="team">TEAM</a>
 		</div>
 			
 	</div>
 </div>
 
 
-<div class="row" ng-show="false">	
+<div class="row" class="collapse" id="team">	
 	<div class="col-sm-6 col-md-4">
     <div class="thumbnail">
       <img src="..." alt="...">
@@ -111,7 +111,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <h3>Ugo Buonadonna</h3>
         <p>CEO & Backend Developer</p>
         <p><a href="#" class="btn btn-primary" role="button">Linkedin</a> 
-        	<a href="#" class="btn btn-default" role="button">Button</a></p>
+        	<a href="#" class="btn btn-default" role="button">Mail</a></p>
       </div>
     </div>
   </div>
@@ -123,7 +123,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <h3>Davide Sicignani</h3>
         <p>CTO & Frontend Developer</p>
         <p><a href="#" class="btn btn-primary" role="button">Linkedin</a> 
-        	<a href="#" class="btn btn-default" role="button">Button</a></p>
+        	<a href="#" class="btn btn-default" role="button">Mail</a></p>
       </div>
     </div>
   </div>
@@ -135,16 +135,16 @@ License: You must have a valid license purchased only from themeforest(the above
         <h3>Andrea Trombone</h3>
         <p>Design Director</p>
         <p><a href="#" class="btn btn-primary" role="button">Linkedin</a> 
-        	<a href="#" class="btn btn-default" role="button">Button</a></p>
+        	<a href="#" class="btn btn-default" role="button">Mail</a></p>
       </div>
     </div>
   </div>
 </div>
 
-<div class="row" ng-show="false">	
+<div class="row" class="collapse" id="resource">	
 	
 	<div class="col-md-3">
-		<a href="blog.passparyou.com">
+		<a href="passparyou.com">
     		<img src="assets/social/ghost.png">
 		</a>
   	</div>
@@ -156,13 +156,13 @@ License: You must have a valid license purchased only from themeforest(the above
   	</div>
 
   	<div class="col-md-3">
-    	<a href="">
+    	<a href="https://www.facebook.com/pages/Passparyou/1587843364828639?fref=ts">
     		<img src="assets/social/facebook.png">
 		</a>
   	</div>
 
   	<div class="col-md-3">
-  		<a href="">
+  		<a href="https://twitter.com/passparyou">
     		<img src="assets/social/twitter.png">
 		</a>
   	</div>
