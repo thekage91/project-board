@@ -85,11 +85,10 @@ License: You must have a valid license purchased only from themeforest(the above
 		<!-- BEGIN HEADER INNER -->
 		<div class="page-header-inner">
 			<!-- BEGIN LOGO -->
+			<img src="assets/admin/layout4/img/logo-light.png" alt="logo" class="logo-default " style="margin-top: 0px;" ng-show="showLogo"/>
 			<div class="page-logo">
-				<a href="index.html">
-				<img src="../../assets/admin/layout4/img/logo-light.png" alt="logo" class="logo-default hidden" style="margin-top: 0px;"/>
-				</a>
-				<div class="menu-toggler sidebar-toggler">
+				<img src="assets/admin/layout4/img/logo-light.png" alt="logo" class="logo-default " style="margin-top: 0px;" ng-show="!showLogo"/>
+				<div class="menu-toggler sidebar-toggler" ng-click="showLogo = !showLogo">
 					<!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
 				</div>
 			</div>
