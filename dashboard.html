@@ -153,7 +153,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
 						<!-- QUI CI STAVANO LE VARIE SEZIONI --> 
 						<!-- SEZIONE NAVBAR USER -->
-						<li class="dropdown dropdown-user dropdown-dark">
+						<li class="dropdown dropdown-user dropdown-dark hidden">
 							<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
 							<span class="username username-hide-on-mobile">
 							Nick </span>
@@ -210,7 +210,7 @@ License: You must have a valid license purchased only from themeforest(the above
 						<span class="title">Dashboard</span>
 						</a>
 					</li>
-					<li>
+					<li class="hidden">
 						<a href="javascript:;">
 						<i class="icon-basket"></i>
 						<span class="title">eCommerce</span>
@@ -244,7 +244,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							</li>
 						</ul>
 					</li>
-					<li>
+					<li class="hidden">
 						<a href="javascript:;">
 						<i class="icon-rocket"></i>
 						<span class="title">Page Layouts</span>
@@ -277,7 +277,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							</li>
 						</ul>
 					</li>
-					<li>
+					<li class="hidden">
 						<a href="javascript:;">
 						<i class="icon-diamond"></i>
 						<span class="title">UI Features</span>
@@ -366,7 +366,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							</li>
 						</ul>
 					</li>
-					<li>
+					<li class="hidden">
 						<a href="javascript:;">
 						<i class="icon-puzzle"></i>
 						<span class="title">UI Components</span>
@@ -416,7 +416,7 @@ License: You must have a valid license purchased only from themeforest(the above
 						</ul>
 					</li>
 					<!-- BEGIN ANGULARJS LINK -->
-					<li class="tooltips" data-container="body" data-placement="right" data-html="true" data-original-title="AngularJS version demo">
+					<li  class="tooltips hidden" data-container="body" data-placement="right" data-html="true" data-original-title="AngularJS version demo">
 						<a href="angularjs" target="_blank">
 						<i class="icon-paper-plane"></i>
 						<span class="title">
@@ -424,7 +424,7 @@ License: You must have a valid license purchased only from themeforest(the above
 						</a>
 					</li>
 					<!-- END ANGULARJS LINK -->
-					<li>
+					<li class="hidden">
 						<a href="javascript:;">
 						<i class="icon-settings"></i>
 						<span class="title">Form Stuff</span>
@@ -471,7 +471,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							</li>
 						</ul>
 					</li>
-					<li>
+					<li class="hidden">
 						<a href="javascript:;">
 						<i class="icon-briefcase"></i>
 						<span class="title">Data Tables</span>
@@ -508,7 +508,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							</li>
 						</ul>
 					</li>
-					<li>
+					<li class="hidden">
 						<a href="javascript:;">
 						<i class="icon-wallet"></i>
 						<span class="title">Portlets</span>
@@ -537,7 +537,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							</li>
 						</ul>
 					</li>
-					<li>
+					<li class="hidden">
 						<a href="javascript:;">
 						<i class="icon-bar-chart"></i>
 						<span class="title">Charts</span>
@@ -554,7 +554,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							</li>
 						</ul>
 					</li>
-					<li>
+					<li class="hidden">
 						<a href="javascript:;">
 						<i class="icon-docs"></i>
 						<span class="title">Pages</span>
@@ -643,7 +643,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							</li>
 						</ul>
 					</li>
-					<li>
+					<li class="hidden">
 						<a href="javascript:;">
 						<i class="icon-present"></i>
 						<span class="title">Extra</span>
@@ -688,7 +688,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							</li>
 						</ul>
 					</li>
-					<li>
+					<li class="hidden">
 						<a href="javascript:;">
 						<i class="icon-folder"></i>
 						<span class="title">Multi Level Menu</span>
@@ -751,7 +751,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							</li>
 						</ul>
 					</li>
-					<li>
+					<li class="hidden">
 						<a href="javascript:;">
 						<i class="icon-user"></i>
 						<span class="title">Login Options</span>
@@ -784,7 +784,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							</li>
 						</ul>
 					</li>
-					<li>
+					<li class="hidden">
 						<a href="javascript:;">
 						<i class="icon-envelope-open"></i>
 						<span class="title">Email Templates</span>
@@ -817,7 +817,7 @@ License: You must have a valid license purchased only from themeforest(the above
 							</li>
 						</ul>
 					</li>
-					<li class="last ">
+					<li class="last hidden">
 						<a href="javascript:;">
 						<i class="icon-pointer"></i>
 						<span class="title">Maps</span>
@@ -875,7 +875,7 @@ License: You must have a valid license purchased only from themeforest(the above
 									</div>
 								</div>
 								<div class="portlet-body">
-									<h4>Lorem ipsum dolor sit amet, explicari molestiae te nec. Vis id stet ignota percipitur, labore diceret cu quo.</h4>		
+									<h4>Analyze market needs</h4>		
 								</div>
 							</div>
 					</div>
@@ -887,14 +887,14 @@ License: You must have a valid license purchased only from themeforest(the above
 							<div class="dashboard-stat2">
 								<div class="display">
 									<div class="number">
-										<h3 class="font-green-sharp">3</h3>
+										<h3 class="font-green-sharp">{{ allStories.length }}</h3>
 										<small>TOTAL <br> STORIES </small>
 									</div>
 									<div class="icon hidden">
 										<i class="icon-pie-chart"></i>
 									</div>
 								</div>
-								<div class="progress-info">
+								<div class="progress-info hidden">
 									<div class="progress">
 										<span style="width: 76%;" class="progress-bar progress-bar-success green-sharp">
 										<span class="sr-only">76% progress</span>
@@ -915,14 +915,14 @@ License: You must have a valid license purchased only from themeforest(the above
 							<div class="dashboard-stat2">
 								<div class="display">
 									<div class="number">
-										<h3 class="font-red-haze">7</h3>
+										<h3 class="font-red-haze">20</h3>
 										<small>TOTAL MANDAYS</small>
 									</div>
 									<div class="icon hidden">
 										<i class="icon-user"></i>
 									</div>
 								</div>
-								<div class="progress-info">
+								<div class="progress-info hidden">
 									<div class="progress">
 										<span style="width: 85%;" class="progress-bar progress-bar-success red-haze">
 										<span class="sr-only">85% change</span>
@@ -943,14 +943,14 @@ License: You must have a valid license purchased only from themeforest(the above
 							<div class="dashboard-stat2">
 								<div class="display">
 									<div class="number">
-										<h3 class="font-purple-soft">3</h3>
+										<h3 class="font-purple-soft">0</h3>
 										<small>TASK COMPLETED</small>
 									</div>
 									<div class="icon hidden">
 										<i class="icon-like"></i>
 									</div>
 								</div>
-								<div class="progress-info">
+								<div class="progress-info hidden">
 									<div class="progress">
 										<span style="width: 57%;" class="progress-bar progress-bar-success purple-soft">
 										<span class="sr-only">56% change</span>
@@ -971,14 +971,14 @@ License: You must have a valid license purchased only from themeforest(the above
 							<div class="dashboard-stat2">
 								<div class="display">
 									<div class="number">
-										<h3 class="font-blue-sharp">2</h3>
+										<h3 class="font-blue-sharp">19</h3>
 										<small>MANDAYS REMAINING</small>
 									</div>
 									<div class="icon hidden">
 										<i class="icon-pie-chart"></i>
 									</div>
 								</div>
-								<div class="progress-info" >
+								<div class="progress-info hidden" >
 									<div class="progress">
 										<span style="width: 45%;" class="progress-bar progress-bar-success blue-sharp">
 										<span class="sr-only">45% grow</span>
@@ -1030,28 +1030,28 @@ License: You must have a valid license purchased only from themeforest(the above
 									<div class="tab-pane active" id="tab_1_1">
 										<div class="scroller" style="height: 337px;" data-always-visible="1" data-rail-visible1="0" data-handle-color="#D7DCE2">
 											<ul class="feeds">
-												<li>
+												<li ng-repeat="story in allStories">
 													<div class="col1">
 														<div class="cont">
 															<div class="cont-col1">
 																<div class="label label-sm label-success">
-																	S01
+																	{{ story.nostro_id }}
 																</div>
 															</div>
-															<div class="cont-col2">
+															<a class="cont-col2" ng-click="getStoryTasks(story.id)">
 																<div class="desc">
-																	 You have 4 pending tasks.
+																	 {{ story.name }}
 																</div>
-															</div>
+															</a>
 														</div>
 													</div>
 													<div class="col2">
 														<div class="date">
-															 3.5
+															 {{ story.mandays }}
 														</div>
 													</div>
 												</li>
-												<li>
+												<!--<li>
 													<div class="col1">
 														<div class="cont">
 															<div class="cont-col1">
@@ -1197,7 +1197,7 @@ License: You must have a valid license purchased only from themeforest(the above
 															 22 
 														</div>
 													</div>
-												</li>
+												</li>-->
 											</ul>
 										</div>
 									</div>
@@ -1657,7 +1657,7 @@ License: You must have a valid license purchased only from themeforest(the above
 								<div class="caption caption-md">
 									<i class="icon-bar-chart theme-font-color hide"></i>
 									<span class="caption-subject theme-font-color bold uppercase">TASKS</span>
-									<span class="caption-helper">16 pending</span>
+									<span class="caption-helper">{{ tasks.length }} pending</span>
 								</div>
 								<div class="inputs">
 									<div class="portlet-input input-small input-inline">
@@ -1672,19 +1672,17 @@ License: You must have a valid license purchased only from themeforest(the above
 								<div class="task-content">
 									<div class="scroller" style="height: 282px;" data-always-visible="1" data-rail-visible1="0" data-handle-color="#D7DCE2">
 										<!-- START TASK LIST -->
-										<ul class="task-list">
+										<ul class="task-list" ng-repeat="task in tasks">
 											<li>
 												<div class="task-title">
 													<span class="task-title-sp">
-													Present 2013 Year IPO Statistics at Board Meeting </span>
-													<span class="label label-sm label-success">Company</span>
-													<span class="task-bell">
-													<i class="fa fa-bell-o"></i>
+														{{ task.description }}
 													</span>
+													<span class="label label-sm label-success">{{ task.manday }} MD</span>
 												</div>
 												
 											</li>
-											<li>
+											<!--<li>
 												<div class="task-title">
 													<span class="task-title-sp">
 													Hold An Interview for Marketing Manager Position </span>
@@ -1792,7 +1790,7 @@ License: You must have a valid license purchased only from themeforest(the above
 												</div>
 											</li>
 										</ul>
-										<!-- END START TASK LIST -->
+										END START TASK LIST -->
 									</div>
 								</div>
 								<div class="task-footer" hidden>

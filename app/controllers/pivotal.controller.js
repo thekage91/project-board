@@ -43,10 +43,15 @@ app.controller('PivotalTrackerCtrl', ['$scope', '$http', 'PivotalTracker', funct
   });
 
   //Per prendere i task di una storia, vedo l'attibuto 'data-story-id' del bottone premuto
-  $scope.getStoryTasks = function (element) {
-    PivotalTracker.getStoryTasks($scope.projectID, element.target.getAttribute('data-story-id')).then(function (tasks) {
+  $scope.getStoryTasks = function (storyId) {
+    /*PivotalTracker.getStoryTasks($scope.projectID, element.target.getAttribute('data-story-id')).then(function (tasks) {
+      $scope.tasks = tasks;
+    });*/
+    PivotalTracker.getStoryTasks($scope.projectID, storyId).then(function (tasks) {
       $scope.tasks = tasks;
     });
+
+    console.log($scope.tasks);
   };
 
   $scope.getRemainingMandays = function (demoDay, teamMembers) {
